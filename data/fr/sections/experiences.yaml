@@ -20,24 +20,145 @@ experiences:
   - designation: Consultant Devops
     start: Jun 2020
     responsibilities:
-     - Construction d''une infrastructure cloud native
-     - Refonte de l''architecture et passage en micro-services
-     - Migration d''infrastructure Azure vers AWS
+     - Construction d'une infrastructure cloud native
+     - Refonte de l'architecture et passage en micro-services
+     - Migration d'infrastructure Azure vers AWS
      - Mise en place du log management centralisé avec Datadog
      - Tests de charge avant MEP avec Jmeter
      - Mise en place du CI/CD (Github, Travis)
-     - Suivi et passation de compétences vers l''équipe technique PHENIX
+     - Suivi et passation de compétences vers l'équipe technique PHENIX
+    technologies: 
+     - Terraform
+     - Ansible
+     - Kubernetes
+     - HAProxy
+     - NGinx
+     - Docker
+     - AWS (Route53, EKS, EFS, Aurora, Elasticache Redis)
+     - Datadog
+     - JMeter
 
 - company:
     name: Groupe ADEO - QUOTATIS
     url: "https://www.quotatis.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    location: Paris
+    overview: Migration On Premise vers Cloud GCP, Transformation du SI en micro-services, MCO de l''infrastructure.
   positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+  - designation: Responsable infrastructure / Lead Devops
+    start: Oct 2017
+    end: May 2020
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - Gestion et évolution de l'infrastructure du SI (Fortinet, VMware, Cisco, Linux)
+    - Création et intégration de l'outil  de Business Intelligence (TIBCO Spotfire) sur GCP
+    - Administration Google Suite et de la console Google Cloud (IAM, API Auth, Quota, Sécurité, Audits, Optimisations des coûts)
+    - Migration de l'infrastructure legacy sur GCP (Terraform, Ansible, Packer)
+    - Responsable technique sur les problématiques globales (sécurité, accès, RGPD) 
+    - Administration des équipements top réseaux (HAProxy, Varnish, Load Balancers, Fortinet Firewall, VPN, IPsec)
+    technologies: 
+     - Google Suite
+     - Google Cloud Platform
+     - Terraform
+     - Ansible
+     - Packer
+     - HAproxy
+     - Varnish
+     - GitHub
+     - NGinx
+     - Datadog
+     - Fortinet
+
+- company:
+    name: QUOTATIS
+    url: "https://www.quotatis.com"
+    location: Paris
+    overview: Création du parc informatique from scratch au démarrage de l''entreprise puis maintenance et évolution de l''ensemble du parc informatique (150 collaborateurs - 3 pays).
+  positions:
+  - designation: Responsable infrastructure / Lead Devops
+    start: Fev 2005
+    end: Oct 2017
+    responsibilities:
+     - Responsable équipe support technique
+     - Responsable des prestataires et solutions SaaS (appels d’offres, gestion des contrats...)
+     - Installation, configuration et maintenance de l'ensemble des serveurs (physiques et virtuels)
+     - Industrialisation des environnements pour un contexte international
+     - Gestion, achat, renouvellement, inventaires du SI
+     - Mise en place de l’architecture système et réseaux (AD/samba4, LDAP, DNS, VPN, postfix, gitlab) 
+     - Gestion du portefeuille des noms de domaines
+     - Mise en place de solution de monitoring (Nagios, Cacti)
+     - Mise en place de solution de backup et antivirus global (Symantec Endpoint & Backup Exec)
+    technologies:
+     - VMware
+     - Linux OS (Debian, Ubuntu, RedHat)
+     - Windows OS
+     - Symantec Corporate
+     - Alcatel OmniPCX
+     - Dell MD storage
+     - Dell PowerConnect
+     - Nagios
+     - Cacti
+     - Cisco Switch
+     - Fortinet Firewall
+     - Gitlab
+
+- company:
+    name: ACCTYS
+    url: "https://urbact.eu/"
+    location: Paris
+    overview: Développement d''un outil (LAMP) PRESAGE-URBACT pour la division Interministérielle des Villes (DIV).
+  positions:
+  - designation: Développeur web fullstack
+    start: Dec 2003
+    end: Jan 2005
+    responsibilities:
+     - Développement d'un outil de gestion pour le programme URBACT
+     - Création d'un site dynamique en PHP/HTML/CSS/JavaScript
+     - Analyses et corrections de bugs
+     - Développement du modèle de base de donnée
+     - Tests et recettes de l'application
+     - Livraison et intégrations des évolutions sur les serveurs
+    technologies:
+     - Linux Debian
+     - Apache
+     - PHP
+     - JavaScript
+     - MySQL
+     - PDF générateur
+
+- company:
+    name: Synaptique Europe pour 9TELECOM
+    #url: "https://urbact.eu/"
+    location: Paris
+    overview: Création de la plateforme ISP de 9TELECOM
+  positions:
+  - designation: Développeur et intégrateur Unix
+    start: 2002
+    end: 2003
+    responsibilities:
+     - Développement PHP/HTML/CSS/JavaScript
+     - Rédactions des manuels d'exploitations
+     - Analyse et corrections des bugs
+     - Livraison et intégrations sur les serveurs de production
+    technologies:
+     - SunOS 5.6
+     - Apache
+     - Oracle 8
+     - LDAP
+     - CVS
+
+- company:
+    name: Synaptique Europe pour France Télécom
+    location: Paris
+    overview: Développement du kit d''installation de l''application GCN (Gestion des Commandes Numéris)
+  positions:
+  - designation: Administrateur UNIX et DBA Oracle junior
+    start: 2001
+    end: 2002
+    responsibilities:
+     - Mise en place et configuration des serveurs et SGDB Oracle
+     - Développement des kits d'installation des outils internes (K-shell)
+    technologies:
+     - Unix (AIX 4.3)
+     - SunOS
+     - Oracle 8
+     - SQL
+     - PL/SQL
