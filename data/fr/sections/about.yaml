@@ -1,6 +1,6 @@
 # section information
 section:
-  name: About
+  name: A propos
   id: about
   enable: true
   weight: 1
@@ -18,7 +18,7 @@ designation: Devops - Infrastructure Cloud
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'IT professional for over 20 years and always passionate about new technologies, I have always enjoyed taking on technological challenges related to information systems. I provide and implement technical solutions to meet the needs of a company''s business processes.'
+summary: 'Professionnel de l''informatique depuis plus de 20 ans et passionné depuis toujours par les nouvelles technologies, j''ai toujours aimer relevé des défis technologiques lié aux systèmes d''informations. J''apporte et mets en place des solutions techniques pour répondre aux besoins des processus métiers d''une société.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -40,3 +40,9 @@ softSkills:
 - name: Team Work
   percentage: 90
   color: yellow
+- name: Linux Expertise
+  percentage: 95
+  color: green
+- name: Autonomie
+  percentage: 70
+  color: sky

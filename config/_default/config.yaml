@@ -3,13 +3,18 @@ baseURL: https://freuds.me
 languageCode: en-us
 title: "Fred's Blog"
 theme: "toha"
+defaultContentLanguage: fr
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
+  fr:
+    languageName: Français
+    weight: 1
   en:
     languageName: English
-    weight: 1
+    weight: 2
+
 
 # Control TOC depth
 markup:
@@ -47,4 +52,4 @@ params:
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
   newsletter:
-    enable: true
+    enable: false

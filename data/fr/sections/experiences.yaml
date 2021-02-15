@@ -1,0 +1,43 @@
+# section information
+section:
+  name: Expériences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: BORN2SCALE
+    url: "https://born2scale.io/"
+    location: Paris
+    # company overview
+    overview: 'Migration de l''infrastructure PHENIX d''Azure vers AWS dans le but de rendre la plateforme plus scalable suite à une forte augmentation du trafic liée au CoVID-19'
+  positions:
+  - designation: Consultant Devops
+    start: Jun 2020
+    responsibilities:
+     - Construction d''une infrastructure cloud native
+     - Refonte de l''architecture et passage en micro-services
+     - Migration d''infrastructure Azure vers AWS
+     - Mise en place du log management centralisé avec Datadog
+     - Tests de charge avant MEP avec Jmeter
+     - Mise en place du CI/CD (Github, Travis)
+     - Suivi et passation de compétences vers l''équipe technique PHENIX
+
+- company:
+    name: Groupe ADEO - QUOTATIS
+    url: "https://www.quotatis.com"
+    location: Nowhere
+    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+  positions:
+  - designation: Software Engineer
+    start: March 2016
+    end: May 2017
+    responsibilities:
+    - Write lots of example codes.
+    - Read lots of examples.
+    - See lots of example videos.
