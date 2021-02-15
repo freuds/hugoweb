@@ -18,4 +18,11 @@
         <li>{{ . | markdownify }}</li>
     {{ end }}
     </ul>
+    <!-- Add the technologie handled at this position -->
+    {{ if $position.technologies }}
+    <h6 class="text-muted">{{ i18n "technologies" }}:</h6>
+    <p>
+        {{ delimit $position.technologies ", " }}
+    </p>
+    {{ end }}
 </div>
