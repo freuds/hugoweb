@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Skills
+  name: Compétences
   id: skills
   enable: true
   weight: 2
@@ -11,20 +11,34 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  icon: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
-
-- name: Go Development
-  icon: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
-
 - name: Cloud Computing
   icon: "/images/sections/skills/cloud.png"
+  summary: "Expérience avec les principaux acteurs du Cloud commme GCP, AWS, Azure"
+
+- name: Shell Scripting
+  icon: "/images/sections/skills/bash.png"
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+
+- name: Kubernetes
+  icon: "/images/sections/skills/kubernetes.png"
+  summary: "Capable de déployer, gérer des applications sur Kubernetes."
+  url: "https://kubernetes.io/"
 
 - name: Docker
   icon: "/images/sections/skills/docker.svg"
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+
+- name: Terraform
+  icon: "/images/sections/skills/terraform.png"
+  summary: "Worked with several projects, terraform integration and with most of the major clouds such as GCP, AWS, Azure etc."
+  url: "https://terraform.io/"
+
+- name: Ansible
+  icon: "/images/sections/skills/ansible.png"
+  summary: "Worked with several projects, terraform integration and with most of the major clouds such as GCP, AWS, Azure etc."
+  url: "https://terraform.io/"
+
+- name: Datadog
+  icon: "/images/sections/skills/datadog.png"
+  summary: "Worked with several projects, terraform integration and with most of the major clouds such as GCP, AWS, Azure etc."
+  url: "https://www.datadoghq.com/"

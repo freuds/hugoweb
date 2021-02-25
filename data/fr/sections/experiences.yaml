@@ -33,6 +33,7 @@ experiences:
      - Kubernetes
      - HAProxy
      - NGinx
+     - Packer
      - Docker
      - AWS (Route53, EKS, EFS, Aurora, Elasticache Redis)
      - Datadog
@@ -44,7 +45,7 @@ experiences:
     location: Paris
     overview: Migration On Premise vers Cloud GCP, Transformation du SI en micro-services, MCO de l''infrastructure.
   positions:
-  - designation: Responsable infrastructure / Lead Devops
+  - designation: Responsable infrastructure / Devops
     start: Oct 2017
     end: May 2020
     responsibilities:
@@ -73,14 +74,14 @@ experiences:
     location: Paris
     overview: Création du parc informatique from scratch au démarrage de l''entreprise puis maintenance et évolution de l''ensemble du parc informatique (150 collaborateurs - 3 pays).
   positions:
-  - designation: Responsable infrastructure / Lead Devops
+  - designation: Administrateur système et réseaux
     start: Fev 2005
     end: Oct 2017
     responsibilities:
      - Responsable équipe support technique
      - Responsable des prestataires et solutions SaaS (appels d’offres, gestion des contrats...)
      - Installation, configuration et maintenance de l'ensemble des serveurs (physiques et virtuels)
-     - Industrialisation des environnements pour un contexte international
+     - Industrialisation des environnements des développements pour un contexte international
      - Gestion, achat, renouvellement, inventaires du SI
      - Mise en place de l’architecture système et réseaux (AD/samba4, LDAP, DNS, VPN, postfix, gitlab) 
      - Gestion du portefeuille des noms de domaines

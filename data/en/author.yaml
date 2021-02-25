@@ -1,9 +1,9 @@
 # some information about you
-name: "Fred Willien"
-nickname: "Fred"
+name: "Frédéric Willien"
+nickname: ""
 # greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Hi, I am"
-image: "images/author/fred.png"
+greeting: ""
+image: "images/author/fred-avatar.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "frederic.willien@gmail.com"
@@ -11,8 +11,7 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I am a Sysadmin
-  - I am a Devops
-  - I love Linux
-  - I work on open-source projects
-  - I love to work with some fun projects
+  - Linux System Administrator
+  - Devops & Cloud
+  - IT Manager
+  - Monitoring & Supervision
