@@ -1,6 +1,8 @@
 FROM nginx:alpine
 
 ARG HUGO_VERSION="0.80.0"
+ARG ENVIRONMENT="development"
+ARG NGINX_PORT="8080"
 
 ENV HUGO_RELEASE="hugo_extended"
 ENV HUGO_ARCH="Linux-64bit"
@@ -23,12 +25,13 @@ RUN tar -xf ${HUGO_RELEASE}_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz && \
 
 # Get hugo static from repo
 RUN git clone https://github.com/${GITHUB_USERNAME}/${DOCKER_IMAGE_NAME}.git
-RUN hugo -s ${DOCKER_IMAGE_NAME} -d /usr/share/nginx/html/ && \
+RUN hugo --environment ${ENVIRONMENT} -s ${DOCKER_IMAGE_NAME} -d /usr/share/nginx/html/ && \
     rm -rf /${DOCKER_IMAGE_NAME}
 
 # copy nginx configurations
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
 COPY ./docker/default.conf /etc/nginx/conf.d/default.conf
+RUN sed -i -- s/NGINX_PORT/${NGINX_PORT}/ /etc/nginx/conf.d/default.conf
 
 # add permissions for nginx user
 RUN chown -R nginx:nginx /usr/share/nginx/html && chmod -R 755 /usr/share/nginx/html && \
