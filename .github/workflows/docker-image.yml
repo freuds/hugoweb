@@ -16,11 +16,11 @@ jobs:
     runs-on: ubuntu-latest
     # Map a step output to a job output
     outputs:
-      version: ${{ steps.step1.outputs.result }}
+      version: ${{ steps.step1.outputs.version }}
     steps:
     - uses: actions/checkout@v2
     - id: step1
-      run: echo $(cat VERSION)
+      run: echo "::set-output name=version::$(cat VERSION)"
   job2:
     runs-on: ubuntu-latest
     needs: lint
