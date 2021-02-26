@@ -8,12 +8,31 @@ on:
 
 env:
   IMAGE_NAME: hugoweb
+  IMAGE_TAG: latest
 
 jobs:
 
+  # lint:
+  #   name: Get version from VERSION
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Checkout
+  #     uses: actions/checkout@v2
+
+  #   - shell: bash
+  #     run: |
+  #      IMAGE_cat VERSION >
+
+
+  #   - name: Print environment variable
+  #     run: echo $ABC
+  #     env: ${{ fromJson(steps.import-env.outputs.result) }} # step-level env
+  # outputs:
+  #     env: ${{ steps.}}
+
+
   docker:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -26,10 +45,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    
-    - name: Get Version
-      run: |
-        IMAGE_TAG=$(cat VERSION)
 
     - name: Build and push
       id: docker_build
@@ -37,14 +52,14 @@ jobs:
       with:
         context: .
         load: true
-        tags: ${{ env.IMAGE_NAME }}:${{ IMAGE_TAG }}
+        tags: ${{ env.IMAGE_NAME }}:$(cat VERSION }
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
 
     - name: Inspect
       run: |
-        docker image inspect ${{ env.IMAGE_NAME }}:${{ IMAGE_TAG }}
+        docker image inspect ${{ env.IMAGE_NAME }}:$(cat VERSION }
 
     # - uses: actions/checkout@v2
     # - name: Build the Docker image
