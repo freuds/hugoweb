@@ -37,14 +37,14 @@ jobs:
       with:
         context: .
         load: true
-        tags: ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+        tags: ${{ env.IMAGE_NAME }}:${{ IMAGE_TAG }}
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
 
     - name: Inspect
       run: |
-        docker image inspect ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+        docker image inspect ${{ env.IMAGE_NAME }}:${{ IMAGE_TAG }}
 
     # - uses: actions/checkout@v2
     # - name: Build the Docker image
