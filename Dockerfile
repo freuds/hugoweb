@@ -31,7 +31,7 @@ RUN hugo --environment ${ENVIRONMENT} -s ${DOCKER_IMAGE_NAME} -d /usr/share/ngin
 # copy nginx configurations
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
-RUN sed -i -- s/NGINX_PORT/${NGINX_PORT}/ /etc/nginx/conf.d/default.conf
+RUN sed -i -- s/@@NGINX_PORT@@/${NGINX_PORT}/ /etc/nginx/conf.d/default.conf
 
 # add permissions for nginx user
 RUN chown -R nginx:nginx /usr/share/nginx/html && chmod -R 755 /usr/share/nginx/html && \
