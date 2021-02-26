@@ -1,4 +1,4 @@
-# freuds.me Host
+# gohugo.io static Host
 
 ## Clone repository
 ```
@@ -14,7 +14,7 @@ Test it on : http://localhost:1313
 
 ## Build image
 ```
-docker build -f docker/Dockerfile . -t <name>:<tag>
+docker build -f Dockerfile . -t <name>:<tag>
 ```
 
 ## Run locally
