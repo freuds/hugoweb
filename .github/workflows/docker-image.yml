@@ -18,6 +18,7 @@ jobs:
     outputs:
       version: ${{ steps.step1.outputs.result }}
     steps:
+    - uses: actions/checkout@v2
     - id: step1
       run: echo $(cat VERSION)
   job2:
