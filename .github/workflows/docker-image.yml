@@ -30,7 +30,6 @@ jobs:
       with:
         context: ./docker/
         push: true
-        load: true
         tags: hugoweb:latest
 
     - name: Image digest
