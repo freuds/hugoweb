@@ -1,4 +1,4 @@
-FROM nginx:1.19.7-alpine
+FROM nginx:alpine
 
 ARG HUGO_VERSION="0.80.0"
 ARG HUGO_ENV="development"
