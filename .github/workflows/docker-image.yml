@@ -41,7 +41,9 @@ jobs:
       with:
         context: .
         push: true
-        build-args: NGINX_PORT=5000 ENVIRONMENT=production
+        build-args: |
+          NGINX_PORT=5000
+          ENVIRONMENT=production
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{needs.lint.outputs.version}}
 
     - name: Image digest
