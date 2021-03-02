@@ -1,6 +1,6 @@
 baseURL: https://freuds.me
 
-languageCode: en-us
+languageCode: fr-fr
 title: "Fred's Blog"
 theme: "toha"
 defaultContentLanguage: fr
@@ -11,10 +11,6 @@ languages:
   fr:
     languageName: Français
     weight: 1
-  en:
-    languageName: English
-    weight: 2
-
 
 # Control TOC depth
 markup:
