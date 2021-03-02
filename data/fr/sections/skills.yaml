@@ -15,22 +15,18 @@ skills:
   icon: "/images/sections/skills/cloud.png"
   summary: "Expérience avec les principaux acteurs du Cloud commme GCP, AWS, Azure"
 
-- name: Shell Scripting
-  icon: "/images/sections/skills/bash.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
 - name: Kubernetes
   icon: "/images/sections/skills/kubernetes.png"
   summary: "Capable de déployer, gérer des applications sur Kubernetes."
   url: "https://kubernetes.io/"
 
 - name: Docker
-  icon: "/images/sections/skills/docker.svg"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  icon: "/images/sections/skills/docker.png"
+  summary: "Expérience avec docker, registry, build (Linux/MacOC/Windows) etc."
 
 - name: Terraform
   icon: "/images/sections/skills/terraform.png"
-  summary: "Worked with several projects, terraform integration and with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Utilisation dans plusieurs projets, également Terraform Cloud, utilisation de modules terraform pour AWS, GCP, Datadog, Auth0"
   url: "https://terraform.io/"
 
 - name: Ansible
@@ -40,5 +36,25 @@ skills:
 
 - name: Datadog
   icon: "/images/sections/skills/datadog.png"
-  summary: "Worked with several projects, terraform integration and with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Utilisation et administration Datadog pour différents clients, mise en place de pipeline de logs, dashboards, agents"
   url: "https://www.datadoghq.com/"
+
+- name: Shell Scripting
+  icon: "/images/sections/skills/bash.png"
+  summary: "Création de multiples scripts depuis plusieurs années."
+
+# - name: Python3 Scripting
+#   icon: "/images/sections/skills/python.png"
+#   summary: ""
+
+# - name: Packer HashiCorp
+#   icon: "/images/sections/skills/packer.png"
+#   summary: 
+
+- name: Reverse Proxy
+  icon: "/images/sections/skills/proxy.png"
+  summary: "Utilisation régulière de HAProxy, Nginx, Apache depuis plusieurs années."
+
+- name: Système d'exploitations
+  icon: "/images/sections/skills/os.png"
+  summary: "Maîtrise des systèmes Linux (Debian / Ubuntu / RedHat / CentOS), Administration de serveurs Windows."
