@@ -44,7 +44,9 @@ jobs:
         build-args: |
           NGINX_PORT=5000
           HUGO_ENV=production
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{needs.lint.outputs.version}}
+        tags: |
+          ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{needs.lint.outputs.version}}
+          ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
