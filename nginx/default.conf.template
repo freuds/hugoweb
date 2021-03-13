@@ -12,6 +12,12 @@ server {
   location = /50x.html {
       root   /usr/share/nginx/html;
   }
+  
+  location /healthz {
+    stub_status on;
+    access_log off;
+    allow 127.0.0.1;
+  }
 
 #  location /auth {
 #    proxy_pass          https://127.0.0.1:5000;
