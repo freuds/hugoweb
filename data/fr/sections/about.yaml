@@ -33,19 +33,35 @@ socialLinks:
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
+badges:
+- type: certification
+  name: Certified HashiCorp Terraform Associate
+  url: "https://www.credly.com/badges/8dbbdcf4-d8be-415f-9410-c6b25c0c71ab/public_url"
+  badge: "https://images.credly.com/size/680x680/images/bf588058-87cc-4cbd-94b0-ef0385fb4371/AWS-SysOpAdmin-Associate-2020.png"
+
+- type: certification
+  name: Certified HashiCorp Terraform Associate
+  url: "https://www.credly.com/badges/8dbbdcf4-d8be-415f-9410-c6b25c0c71ab/public_url"
+  badge: "https://images.credly.com/size/680x680/images/bf588058-87cc-4cbd-94b0-ef0385fb4371/AWS-SysOpAdmin-Associate-2020.png"
+
 softSkills:
-- name: Réactivité
+- type: soft-skill-indicator
+  name: Réactivité
   percentage: 95
   color: blue
-- name: Travail d'équipe
-  percentage: 90
-  color: yellow
-- name: Curiosité
-  percentage: 95
-  color: green
-- name: Autonomie
-  percentage: 85
-  color: sky
-- name: Adaptation
-  percentage: 85
-  color: orange
+# - type: soft-skill-indicator
+#   name: Travail d'équipe
+#   percentage: 90
+#   color: yellow
+# - type: soft-skill-indicator
+#   name: Curiosité
+#   percentage: 95
+#   color: green
+# - type: soft-skill-indicator
+#   name: Autonomie
+#   percentage: 85
+#   color: sky
+# - type: soft-skill-indicator
+#   name: Adaptation
+#   percentage: 85
+#   color: orange

@@ -38,14 +38,14 @@
 }
 
 .home img {
-  width: 164px;
-  height: 164px;
-  /* background-color: #e7e7ef; */
-  /* padding: 5px; */
+  width: 148px;
+  height: 148px;
+  background-color: #e7e7ef;
+  padding: 5px;
   margin-bottom: 10px;
 }
 
-.home .greeting {
+.home .greeting, .home .greeting-subtitle {
   color: #f9fafc;
 }
 

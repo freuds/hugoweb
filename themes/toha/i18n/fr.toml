@@ -3,7 +3,7 @@
 other = "Accueil"
 
 [posts]
-other = "Des postes"
+other = "Articles"
 
 [toc_heading]
 other = "Table des matières"
@@ -12,7 +12,7 @@ other = "Table des matières"
 other = "chez"
 
 [resume]
-other = "Mon Curriculum vitæ"
+other = "Mon CV"
 
 [navigation]
 other = "Naviguation"
