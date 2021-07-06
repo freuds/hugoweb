@@ -1,10 +1,10 @@
-name: Docker Image CI
+name: Hugo CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
 
 env:
   IMAGE_NAME: hugoweb
@@ -18,9 +18,19 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0
     - name: Read Version file
       id: get-version
       run: echo "::set-output name=version::$(cat VERSION)"
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.84.4'
+        # extended: true
+    - name: Build
+      run: hugo --minify
 
   docker:
     runs-on: ubuntu-latest
