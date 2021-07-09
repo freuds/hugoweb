@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-ARG HUGO_VERSION="0.80.0"
+ARG HUGO_VERSION="0.85.0"
 ARG HUGO_ENV="development"
 ARG NGINX_PORT="5000"
 
