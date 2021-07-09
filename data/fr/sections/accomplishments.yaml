@@ -1,0 +1,44 @@
+# section information
+section:
+  name: Réalisations
+  id: accomplishments
+  enable: true
+  weight: 7
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+
+# Your accomplishments
+accomplishments:
+- name: AWS Certified SysOps Administrator – Associate
+  timeline: "Jun 2021 - Jun 2024"
+  organization:
+    name: A Cloud Guru
+    url: https://acloudguru.com/
+  courseOverview: "Les lauréats de cette certification ont une compréhension approfondie de la façon de déployer, gérer et exploiter les systèmes informatiques sur le cloud AWS. Ils ont démontré leur capacité à migrer les charges de travail sur site vers AWS et à surveiller, faire évoluer et sécuriser les systèmes sur la plate-forme AWS. Les propriétaires de badges sont en mesure de fournir des conseils sur la mise en œuvre des meilleures pratiques pour les opérations cloud."
+  certificateURL: "https://www.credly.com/badges/c00c3afd-2427-4e58-ac03-82858ff3f886/public_url"
+
+- name: AWS Certified Solutions Architect – Associate
+  timeline: "May 2021 - May 2024"
+  organization:
+    name: A Cloud Guru
+    url: https://acloudguru.com/
+  courseOverview: "Les lauréats de cette certification ont une compréhension complète des services et technologies AWS. Ils ont démontré leur capacité à créer des solutions sécurisées et robustes en utilisant des principes de conception architecturale basés sur les exigences des clients. Les propriétaires de badges sont en mesure de concevoir de manière stratégique des systèmes distribués bien architecturés, évolutifs, résilients, efficaces et tolérants aux pannes."
+  certificateURL: "https://www.credly.com/badges/3d120057-5787-432c-b164-411934df9c99/public_url"
+
+- name: HashiCorp Certified Terraform Associate
+  timeline: "July 2021 - July 2024"
+  organization:
+    name: A Cloud Guru
+    url: https://acloudguru.com/
+  courseOverview: "Les titulaires de la certification HashiCorp Certified: Terraform Associate connaissent les concepts de base, les compétences et les cas d'utilisation associés à l'open source HashiCorp Terraform. Ils comprennent et peuvent utiliser Terraform selon les objectifs de certification. De plus, ils comprennent pourquoi les entreprises choisissent d'étendre Terraform Open Source avec Terraform Enterprise pour résoudre leurs objectifs commerciaux critiques."
+  certificateURL: "https://www.credly.com/badges/8dbbdcf4-d8be-415f-9410-c6b25c0c71ab/public_url"
+
+- name: Linux Foundation System Administrator
+  timeline: "March 2018 - March 2019"
+  organization:
+    name: Linux Foundation
+    url: https://www.linuxfoundation.org
+  courseOverview: "Ce cours aide à comprendre les concepts clés tels que la mise en réseau, le stockage, la sécurité, la maintenance, la journalisation et la surveillance, le cycle de vie des applications, le dépannage, les primitives d'objets API, etc. Il aide également à développer la capacité à établir des cas d'utilisation de base pour les utilisateurs finaux."
+  certificateURL: "#"
