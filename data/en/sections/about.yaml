@@ -38,7 +38,7 @@ badges:
 
 - type: certification
   name: AWS Certified Solutions Architect – Associate
-  url: "ttps://www.credly.com/badges/3d120057-5787-432c-b164-411934df9c99/public_url"
+  url: "https://www.credly.com/badges/3d120057-5787-432c-b164-411934df9c99/public_url"
   badge: "https://images.credly.com/size/680x680/images/4bc21d8b-4afe-4fbd-9a90-a9de8bf7b240/AWS-SolArchitect-Associate-2020.png"
 
 - type: certification

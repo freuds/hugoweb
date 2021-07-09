@@ -11,32 +11,155 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
+    name: BORN2SCALE
+    url: "https://born2scale.io/"
+    location: Paris
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: "Migration of the PHENIX infrastructure from the Azure cloud to AWS in order to make the platform more scalable following a sharp increase in traffic linked to CoVID-19"
+
   positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+  - designation: DevOps Consultant
+    start: Jun 2020
     responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
+     - Building a native cloud infrastructure
+     - Architecture overhaul and transition to micro-services
+     - Migrating an Azure infrastructure to AWS
+     - Implementation of centralized log management with Datadog
+     - Load tests before MEP with Jmeter
+     - Setting up the CI / CD (Github, Travis)
+     - Monitoring and transfer of skills to the PHENIX technical team
+    technologies:
+     - Terraform
+     - Ansible
+     - Kubernetes
+     - HAProxy
+     - NGinx
+     - Packer
+     - Docker
+     - AWS (Route53, EKS, EFS, Aurora, Elasticache Redis)
+     - Datadog
+     - JMeter
 
 - company:
-    name: PreExample Co.
-    url: "https://www.preexample.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: Groupe ADEO - QUOTATIS
+    url: "https://www.quotatis.com"
+    location: Paris
+    overview: On Premise Migration to Cloud GCP, Transformation of the architecture into micro-services, MCO of the infrastructure.
   positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+  - designation: Lead infrastructure / Devops
+    start: Oct 2017
+    end: May 2020
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+     - Management and evolution of the infrastructure (Fortinet, VMware, Cisco, Linux)
+     - Creation and integration of the Business Intelligence tool (TIBCO Spotfire) on GCP
+     - Google Suite and Google Cloud console administration (IAM, API Auth, Quota, Security, Audits, Cost optimizations)
+     - Migration of legacy infrastructure to GCP (Terraform, Ansible, Packer)
+     - Technical manager on global issues (security, access, GDPR)
+     - Administration of top network equipment (HAProxy, Varnish, Load Balancers, Fortinet Firewall, VPN, IPsec)
+    technologies:
+     - Google Suite
+     - Google Cloud Platform
+     - Terraform
+     - Ansible
+     - Packer
+     - HAproxy
+     - Varnish
+     - GitHub
+     - NGinx
+     - Datadog
+     - Fortinet
+
+- company:
+    name: QUOTATIS
+    url: "https://www.quotatis.com"
+    location: Paris
+    overview: Création du parc informatique from scratch au démarrage de l''entreprise puis maintenance et évolution de l''ensemble du parc informatique (150 collaborateurs - 3 pays).
+  positions:
+  - designation: System and Network Administrator
+    start: Fev 2005
+    end: Oct 2017
+    responsibilities:
+     - Technical support team manager
+     - Responsible for providers and SaaS solutions (calls for tenders, contract management ...)
+     - Installation, configuration and maintenance of all servers (physical and virtual)
+     - Industrialization of development environments for an international context
+     - Management, purchase, renewal, IS inventories
+     - Implementation of the system and network architecture (AD / samba4, LDAP, DNS, VPN, postfix, gitlab)
+     - Management of the domain name portfolio
+     - Implementation of monitoring solution (Nagios, Cacti)
+     - Implementation of backup and global antivirus solution (Symantec Endpoint & Backup Exec)
+    technologies:
+     - VMware
+     - Linux OS (Debian, Ubuntu, RedHat)
+     - Windows OS
+     - Symantec Corporate
+     - Alcatel OmniPCX
+     - Dell MD storage
+     - Dell PowerConnect
+     - Nagios
+     - Cacti
+     - Cisco Switch
+     - Fortinet Firewall
+     - Gitlab
+
+- company:
+    name: ACCTYS
+    url: "https://urbact.eu/"
+    location: Paris
+    overview: Development of a PRESAGE-URBACT tool (LAMP) for the Interministerial Division of Cities (DIV).
+  positions:
+  - designation: Web Developer Fullstack
+    start: Dec 2003
+    end: Jan 2005
+    responsibilities:
+     - Development of a management tool for the URBACT program
+     - Creation of a dynamic site in PHP / HTML / CSS / JavaScript
+     - Analyzes and bug fixes
+     - Development of the database model
+     - Tests and recipes of the application
+     - Delivery and integration of evolutions on servers
+  technologies:
+     - Linux Debian
+     - Apache
+     - PHP
+     - JavaScript
+     - MySQL
+     - PDF générateur
+
+- company:
+    name: Synaptique Europe for 9TELECOM
+    #url: "https://urbact.eu/"
+    location: Paris
+    overview: Creation of the 9TELECOM ISP platform
+  positions:
+  - designation: Unix developer and integrator
+    start: 2002
+    end: 2003
+    responsibilities:
+     - PHP / HTML / CSS / JavaScript development
+     - Writing of operating manuals
+     - Analysis and corrections of bugs
+     - Delivery and integrations on production servers
+    technologies:
+     - SunOS 5.6
+     - Apache
+     - Oracle 8
+     - LDAP
+     - CVS
+
+- company:
+    name: Synaptique Europe for France Télécom
+    location: Paris
+    overview: Development of the GCN application installation kit (Numéris Order Management)
+  positions:
+  - designation: UNIX administrator and Oracle junior DBA
+    start: 2001
+    end: 2002
+    responsibilities:
+     - Implementation and configuration of Oracle servers and SGDBs
+     - Development of internal tool installation kits (K-shell)
+    technologies:
+     - Unix (AIX 4.3)
+     - SunOS
+     - Oracle 8
+     - SQL

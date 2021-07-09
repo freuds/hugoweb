@@ -6,7 +6,7 @@ section:
   weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
@@ -15,7 +15,7 @@ experiences:
     url: "https://born2scale.io/"
     location: Paris
     # company overview
-    overview: 'Migration de l''infrastructure PHENIX d''Azure vers AWS dans le but de rendre la plateforme plus scalable suite à une forte augmentation du trafic liée au CoVID-19'
+    overview: Migration de l''infrastructure PHENIX d''Azure vers AWS dans le but de rendre la plateforme plus scalable suite à une forte augmentation du trafic liée au CoVID-19'
   positions:
   - designation: Consultant Devops
     start: Jun 2020
@@ -27,7 +27,7 @@ experiences:
      - Tests de charge avant MEP avec Jmeter
      - Mise en place du CI/CD (Github, Travis)
      - Suivi et passation de compétences vers l'équipe technique PHENIX
-    technologies: 
+    technologies:
      - Terraform
      - Ansible
      - Kubernetes
@@ -43,7 +43,7 @@ experiences:
     name: Groupe ADEO - QUOTATIS
     url: "https://www.quotatis.com"
     location: Paris
-    overview: Migration On Premise vers Cloud GCP, Transformation du SI en micro-services, MCO de l''infrastructure.
+    overview: Migration On Premise vers Cloud GCP, Transformation de l''architecture en micro-services, MCO de l''infrastructure.
   positions:
   - designation: Responsable infrastructure / Devops
     start: Oct 2017
@@ -53,9 +53,9 @@ experiences:
     - Création et intégration de l'outil  de Business Intelligence (TIBCO Spotfire) sur GCP
     - Administration Google Suite et de la console Google Cloud (IAM, API Auth, Quota, Sécurité, Audits, Optimisations des coûts)
     - Migration de l'infrastructure legacy sur GCP (Terraform, Ansible, Packer)
-    - Responsable technique sur les problématiques globales (sécurité, accès, RGPD) 
+    - Responsable technique sur les problématiques globales (sécurité, accès, RGPD)
     - Administration des équipements top réseaux (HAProxy, Varnish, Load Balancers, Fortinet Firewall, VPN, IPsec)
-    technologies: 
+    technologies:
      - Google Suite
      - Google Cloud Platform
      - Terraform
@@ -83,7 +83,7 @@ experiences:
      - Installation, configuration et maintenance de l'ensemble des serveurs (physiques et virtuels)
      - Industrialisation des environnements des développements pour un contexte international
      - Gestion, achat, renouvellement, inventaires du SI
-     - Mise en place de l’architecture système et réseaux (AD/samba4, LDAP, DNS, VPN, postfix, gitlab) 
+     - Mise en place de l’architecture système et réseaux (AD/samba4, LDAP, DNS, VPN, postfix, gitlab)
      - Gestion du portefeuille des noms de domaines
      - Mise en place de solution de monitoring (Nagios, Cacti)
      - Mise en place de solution de backup et antivirus global (Symantec Endpoint & Backup Exec)
