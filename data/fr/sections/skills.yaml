@@ -22,39 +22,31 @@ skills:
 
 - name: Docker
   icon: "/images/sections/skills/docker.png"
-  summary: "Expérience avec docker, registry, build (Linux/MacOC/Windows) etc."
+  summary: "Expérience avec docker, registres, build (Linux/MacOS/Windows) etc."
 
 - name: Terraform
   icon: "/images/sections/skills/terraform.png"
-  summary: "Utilisation dans plusieurs projets, également Terraform Cloud, utilisation de modules terraform pour AWS, GCP, Datadog, Auth0"
+  summary: "Utilisation dans plusieurs projets, également Terraform Cloud, utilisation de modules terraform pour AWS, GCP, Datadog, Auth0 et d'autres providers"
   url: "https://terraform.io/"
 
 - name: Ansible
   icon: "/images/sections/skills/ansible.png"
-  summary: "Worked with several projects, terraform integration and with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Familier avec les conceptions de playbooks, et de roles pour Ansible, Utilisation de Molecule pour la CI"
   url: "https://terraform.io/"
 
 - name: Datadog
   icon: "/images/sections/skills/datadog.png"
-  summary: "Utilisation et administration Datadog pour différents clients, mise en place de pipeline de logs, dashboards, agents"
+  summary: "Utilisation et administration de l'outil Datadog pour différents clients, mise en place de pipeline de logs, filtrages, dashboards, agents (vm et container)"
   url: "https://www.datadoghq.com/"
 
-- name: Shell Scripting
+- name: Languages
   icon: "/images/sections/skills/bash.png"
-  summary: "Création de multiples scripts depuis plusieurs années."
+  summary: "Utilisation régulière du shell bash depuis plusieurs années, un peu de Python et de Go, et pleins d'autres languages que j'ai utilisé dans le passé : Perl, TurboPascal, Delphi, Cobol, C"
 
-# - name: Python3 Scripting
-#   icon: "/images/sections/skills/python.png"
-#   summary: ""
-
-# - name: Packer HashiCorp
-#   icon: "/images/sections/skills/packer.png"
-#   summary: 
-
-- name: Reverse Proxy
+- name: Reverse Proxy & Webserver
   icon: "/images/sections/skills/proxy.png"
   summary: "Utilisation régulière de HAProxy, Nginx, Apache depuis plusieurs années."
 
 - name: Système d'exploitations
   icon: "/images/sections/skills/os.png"
-  summary: "Maîtrise des systèmes Linux (Debian / Ubuntu / RedHat / CentOS), Administration de serveurs Windows."
+  summary: "Maîtrise des systèmes Linux (Debian / Ubuntu / RedHat / CentOS), Administration de serveurs Windows"
