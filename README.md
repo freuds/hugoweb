@@ -1,9 +1,8 @@
 # gohugo.io static Host
 
-## Clone repository
-```
-git clone https://github.com/freuds/hugoweb.git
-```
+## Install gohugo.io
+
+Follow instructions on this [page](https://gohugo.io/getting-started/installing/)
 
 ## Launch HUGO on development mode (default)
 ```
