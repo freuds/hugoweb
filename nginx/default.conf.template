@@ -12,7 +12,7 @@ server {
   location = /50x.html {
       root   /usr/share/nginx/html;
   }
-  
+
   location /healthz {
     stub_status on;
     access_log off;
