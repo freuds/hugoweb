@@ -6,8 +6,8 @@ greeting: ""
 image: "images/author/fred-avatar.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "frederic.willien@gmail.com"
-  phone: ""
+  email: "fred@freuds.me"
+  #phone: ""
 
 # some summary about what you do
 summary:

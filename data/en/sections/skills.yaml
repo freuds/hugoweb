@@ -12,41 +12,41 @@ section:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: Cloud Computing
-  icon: "/images/sections/skills/cloud.png"
+  logo: "/images/sections/skills/cloud.png"
   summary: "Experienced with major cloud players like GCP, AWS, Azure"
 
 - name: Kubernetes
-  icon: "/images/sections/skills/kubernetes.png"
+  logo: "/images/sections/skills/kubernetes.png"
   summary: "Capable of deploying, managing application on Kubernetes."
   url: "https://kubernetes.io/"
 
 - name: Docker
-  icon: "/images/sections/skills/docker.png"
+  logo: "/images/sections/skills/docker.png"
   summary: "Experience with docker, registries, build (Linux / MacOS / Windows) etc."
 
 - name: Terraform
-  icon: "/images/sections/skills/terraform.png"
+  logo: "/images/sections/skills/terraform.png"
   summary: "Use in several projects, also Terraform Cloud, construction of terraform modules for AWS, GCP, Datadog, Auth0 and other providers"
   url: "https://terraform.io/"
 
 - name: Ansible
-  icon: "/images/sections/skills/ansible.png"
+  logo: "/images/sections/skills/ansible.png"
   summary: "Familiar with playbook and role designs for Ansible, using Molecule for CI"
   url: "https://terraform.io/"
 
 - name: Datadog
-  icon: "/images/sections/skills/datadog.png"
+  logo: "/images/sections/skills/datadog.png"
   summary: "Use and administration of the Datadog tool for different customers, implementation of logs pipeline, filtering, dashboards, agents (vm and container)"
   url: "https://www.datadoghq.com/"
 
 - name: Languages
-  icon: "/images/sections/skills/bash.png"
+  logo: "/images/sections/skills/bash.png"
   summary: "Regular use of the bash shell for several years, a bit of Python and Go, and many other languages that I have used in the past: Perl, TurboPascal, Delphi, Cobol, C"
 
 - name: Reverse Proxy & Webserver
-  icon: "/images/sections/skills/proxy.png"
+  logo: "/images/sections/skills/proxy.png"
   summary: "Regular use of HAProxy, Nginx, Apache since several years."
 
 - name: Système d'exploitations
-  icon: "/images/sections/skills/os.png"
+  logo: "/images/sections/skills/os.png"
   summary: "Mastery of Linux systems (Debian / Ubuntu / RedHat / CentOS), Administration of Windows servers."
