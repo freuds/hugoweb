@@ -32,7 +32,7 @@ skills:
 - name: Ansible
   logo: "/images/sections/skills/ansible.png"
   summary: "Familier avec les conceptions de playbooks, et de roles pour Ansible, Utilisation de Molecule pour la CI"
-  url: "https://terraform.io/"
+  url: "https://docs.ansible.com/ansible/latest/index.html"
 
 - name: Datadog
   logo: "/images/sections/skills/datadog.png"
