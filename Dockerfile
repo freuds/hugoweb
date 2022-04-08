@@ -1,35 +1,36 @@
 FROM nginx:alpine
 
-ARG HUGO_VERSION="0.85.0"
-ARG HUGO_ENV="development"
 ARG NGINX_PORT="5000"
-
-ENV HUGO_RELEASE="hugo_extended"
-ENV HUGO_ARCH="Linux-64bit"
-ENV GITHUB_USERNAME="freuds"
-ENV GITHUB_REPOSITORY="hugoweb"
 ENV NGINX_PORT=${NGINX_PORT}
-ENV HUGO_ENV=${HUGO_ENV}
+
+ARG HUGO_ENV="development"
+ARG HUGO_VERSION="0.96.0"
+ARG HUGO_FILENAME="hugo_extended_${HUGO_VERSION}_Linux-64bit"
+
+ARG GITHUB_USER="freuds"
+ARG GITHUB_REPO="hugoweb"
 
 # Install dependency
 RUN apk add --update --no-cache \
-    git \
     libstdc++ \
     libc6-compat \
-    g++ \
-    ca-certificates
+    git
 
 # Install gohugo binary
-ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_RELEASE}_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz .
-RUN tar -xf ${HUGO_RELEASE}_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz && \
-    rm -f ${HUGO_RELEASE}_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz README.md LICENSE && \
+ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_FILENAME} .
+RUN tar -xf ${HUGO_FILENAME} && \
+    rm -f ${HUGO_FILENAME} README.md LICENSE && \
     mv hugo /usr/bin
 
 # Get hugo static from repo
-RUN git clone https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}.git
+RUN git clone https://github.com/${GITHUB_USER}/${GITHUB_REPO}.git
 RUN mkdir -p /app && \
-    hugo --environment ${HUGO_ENV} -s ${GITHUB_REPOSITORY} -d /app/ && \
-    rm -rf /${GITHUB_REPOSITORY}
+    /usr/bin/hugo --environment ${HUGO_ENV} -s ${GITHUB_REPO} -d /app/ && \
+    rm -rf /${GITHUB_REPO} && rm -f /usr/bin/hugo
+
+RUN apk del --no-cache libstdc++ \
+    libc6-compat \
+    git
 
 # Nginx configurations
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
