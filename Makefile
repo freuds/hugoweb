@@ -37,7 +37,8 @@ ifeq ($(UNAME_P),arm64)
 endif
 
 # hugo docker args
-HUGO_BINARY = hugo # hugo_extended
+#HUGO_BINARY = hugo_extended
+HUGO_BINARY = hugo
 HUGO_VERSION = 0.96.0
 HUGO_FILENAME = $(HUGO_BINARY)_$(HUGO_VERSION)_$(OS)-$(ARCH).tar.gz
 HUGO_ENV = production
@@ -48,6 +49,7 @@ NGINX_PORT = 5000
 # hugoweb variables
 NAME = hugoweb
 VERSION = $(shell cat VERSION)
+CONTAINER_NAME = $(NAME)_$(VERSION)
 
 ##########################################################################
 ## This command manage hugoweb release
@@ -72,18 +74,22 @@ dev: clear
 generate:
 		@hugo --environment $(HUGO_ENV)
 
-##  > docker : launch Hugo in development mode
-image: generate
+##  > docker : build docker image
+image:
 		@docker build \
-			--build-arg HUGO_VERSION=$(HUGO_VERSION) \
-			--build-arg HUGO_FILENAME=$(HUGO_FILENAME) \
-			--build-arg HUGO_ENV=$(HUGO_ENV) \
-			--build-arg NGINX_PORT=$(NGINX_PORT) \
-			--rm \
+			--build-arg HUGO_VERSION="$(HUGO_VERSION)" \
+			--build-arg HUGO_FILENAME="$(HUGO_FILENAME)" \
+			--build-arg HUGO_ENV="$(HUGO_ENV)" \
+			--build-arg NGINX_PORT="$(NGINX_PORT)" \
 			--no-cache \
 			-f Dockerfile \
 			-t $(NAME):$(VERSION) .
 
-##  > dockertest : launch Hugo in development mode
-test:
-		@docker run -d -p 1313:$(NGINX_PORT) $(NAME):$(VERSION)
+##  > run : launch Hugo from docker image
+run:
+		@docker run -d -p 1313:$(NGINX_PORT) --name $(CONTAINER_NAME) $(NAME):$(VERSION)
+
+##  > shell : shell exec on running container
+shell:
+		@container_id=$$(docker ps -q --filter="NAME=$(CONTAINER_NAME)") ; \
+		docker exec -ti $${container_id} sh
