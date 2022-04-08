@@ -73,7 +73,7 @@ generate:
 		@hugo --environment $(HUGO_ENV)
 
 ##  > docker : launch Hugo in development mode
-image:
+image: generate
 		@docker build \
 			--build-arg HUGO_VERSION=$(HUGO_VERSION) \
 			--build-arg HUGO_FILENAME=$(HUGO_FILENAME) \
