@@ -5,7 +5,7 @@ ENV NGINX_PORT=${NGINX_PORT}
 
 ARG HUGO_ENV="development"
 ARG HUGO_VERSION="0.96.0"
-ARG HUGO_FILENAME="hugo_extended_${HUGO_VERSION}_Linux-64bit"
+ARG HUGO_FILENAME="hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
 
 ARG GITHUB_USER="freuds"
 ARG GITHUB_REPO="hugoweb"
