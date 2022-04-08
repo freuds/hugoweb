@@ -15,10 +15,10 @@ other = "chez"
 other = "Mon CV"
 
 [navigation]
-other = "Naviguation"
+other = "Navigation"
 
 [contact_me]
-other = "Contactez moi :"
+other = "Contact :"
 
 [email]
 other = "Email"
@@ -118,3 +118,6 @@ other = "Techonologies"
 
 [accomplishments]
 other = "Réalisations"
+
+[context]
+other = "Contexte"
