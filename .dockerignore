@@ -1,4 +1,2 @@
-.github
-.hugo_build.lock
-public
-resources
+/public
+/resources
