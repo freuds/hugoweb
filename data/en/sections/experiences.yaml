@@ -6,160 +6,206 @@ section:
   weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
 - company:
-    name: BORN2SCALE
-    url: "https://born2scale.io/"
+    name: Devoteam Revolve
+    url: https://revolve.team
     location: Paris
-    # company overview
-    overview: "Migration of the PHENIX infrastructure from the Azure cloud to AWS in order to make the platform more scalable following a sharp increase in traffic linked to CoVID-19"
-
+    overview: Formerly D2SI, a consulting firm specializing in the AWS Cloud, joined the Devoteam Group in 2020
   positions:
-  - designation: DevOps Consultant
-    start: Jun 2020
-    responsibilities:
-     - Building a native cloud infrastructure
-     - Architecture overhaul and transition to micro-services
-     - Migrating an Azure infrastructure to AWS
-     - Implementation of centralized log management with Datadog
-     - Load tests before MEP with Jmeter
-     - Setting up the CI / CD (Github, Travis)
-     - Monitoring and transfer of skills to the PHENIX technical team
+  - designation: Lead DevOps and Automation
+    context: Within the CloudData team of Malakoff Humanis, we are in charge of managing, maintaining and evolving the Data infrastructure on AWS, the foundation is based on software such as Dataiku, JupyterHub and many other tools for the use of Data Scientist and Analalyst.
+    url: https://malakoffhumanis.com
+    start: Mai 2021
+    responsabilities:
+      - AWS & DevOps cloud referent for the infrastructure and Kubernetes part.
+      - Implementation, integration of new solutions in Kubernetes.
+      - Optimization, evolution and implementation of Terraform best practices.
+      - Implementation of IaC and local governance solutions.
+      - Industrialisation of Docker and Chart Helm build processes via ECR
+      - Ensuring the internal team's competence on Cloud AWS topics
     technologies:
-     - Terraform
-     - Ansible
-     - Kubernetes
-     - HAProxy
-     - NGinx
-     - Packer
-     - Docker
-     - AWS (Route53, EKS, EFS, Aurora, Elasticache Redis)
-     - Datadog
-     - JMeter
+      - AWS Core Services
+      - EKS
+      - JupyterHub
+      - Dataiku
+      - Jenkins
+  - designation: AWS & DevOps Technical Architect
+    context: Within the PFS network team of Bouygues Telecom, the DPPS department (Products and Services Platforms Department) is in charge of managing, maintaining and developing the different types of hosting platforms. This department is just starting their activity in the Cloud, so it is to support the implementation of Cloud solutions (mainly AWS).
+    url: https://www.bouyguestelecom.fr
+    start: July 2021
+    # end: April 2022
+    responsibilities:
+      - AWS & DevOps cloud referent for the Hosting department in liaison with the IT and CI/CD framework teams.
+      - Act as a leader in the choice of technical architectures and solutions
+      - Integration of CI/CD constraints, implementation of IaC and local governance solutions.
+      - Ensure the internal team's competence on Cloud AWS and CI/CD topics
+    technologies:
+      - AWS Core Services
+      - CloudFormation
+      - Lambda
+      - ApiGateway
+      - Terraform
+      - Gitlab-CI
+      - Ansible
 
+## B2S
 - company:
-    name: Groupe ADEO - QUOTATIS
-    url: "https://www.quotatis.com"
+    name: BORN2SCALE
+    url: https://born2scale.io/
     location: Paris
-    overview: On Premise Migration to Cloud GCP, Transformation of the architecture into micro-services, MCO of the infrastructure.
+    overview: Consulting company specialized in Cloud / Devops / Agile
   positions:
-  - designation: Lead infrastructure / Devops
+  - designation: DevOps Consulting
+    customer: Phenix
+    url: https://www.wearephenix.com/
+    context: Migration of the monolithic infrastructure from Azure to AWS using EKS, in order to make the platform more scalable following a strong increase in traffic related to CoVID-19.
+    start: Jun 2020
+    end: Jan 2021
+    responsibilities:
+      - Building a native cloud infrastructure
+      - Re-architecting and moving to microservices
+      - Migration of Azure infrastructure to AWS
+      - Implementation of centralized log management with Datadog
+      - Load testing before MEP with Jmeter
+      - Implementation of CI/CD (Github, Travis)
+      - Follow-up and transfer of skills to the PHENIX technical team
+    technologies:
+      - Terraform
+      - Ansible
+      - Kubernetes
+      - HAProxy
+      - NGinx
+      - Packer
+      - Docker
+      - AWS (Route53, EKS, EFS, Aurora, Elasticache Redis)
+      - Datadog
+      - JMeter
+
+## Quotatis
+- company:
+    name: QUOTATIS (Groupe ADEO)
+    url: https://www.quotatis.com
+    location: Paris
+    overview: Platform of intermediation between individuals and craftsmen.
+  positions:
+  - designation: Infrastructure / Devops Manager
     start: Oct 2017
     end: May 2020
+    context: On Premise Migration to Cloud GCP, Transformation of the architecture into micro-services, MCO of the infrastructure.
     responsibilities:
-     - Management and evolution of the infrastructure (Fortinet, VMware, Cisco, Linux)
-     - Creation and integration of the Business Intelligence tool (TIBCO Spotfire) on GCP
-     - Google Suite and Google Cloud console administration (IAM, API Auth, Quota, Security, Audits, Cost optimizations)
-     - Migration of legacy infrastructure to GCP (Terraform, Ansible, Packer)
-     - Technical manager on global issues (security, access, GDPR)
-     - Administration of top network equipment (HAProxy, Varnish, Load Balancers, Fortinet Firewall, VPN, IPsec)
+      - Management and evolution of the IS infrastructure (Fortinet, VMware, Cisco, Linux)
+      - Creation and integration of the Business Intelligence tool (TIBCO Spotfire) on GCP
+      - Administration of Google Suite and Google Cloud Console (IAM, API Auth, Quota, Security, Audits, Cost optimization)
+      - Migration of legacy infrastructure on GCP (Terraform, Ansible, Packer)
+      - Technical manager on global issues (security, access, RGPD)
+      - Administration of top network equipment (HAProxy, Varnish, Load Balancers, Fortinet Firewall, VPN, IPsec)
     technologies:
-     - Google Suite
-     - Google Cloud Platform
-     - Terraform
-     - Ansible
-     - Packer
-     - HAproxy
-     - Varnish
-     - GitHub
-     - NGinx
-     - Datadog
-     - Fortinet
-
-- company:
-    name: QUOTATIS
-    url: "https://www.quotatis.com"
-    location: Paris
-    overview: Création du parc informatique from scratch au démarrage de l''entreprise puis maintenance et évolution de l''ensemble du parc informatique (150 collaborateurs - 3 pays).
-  positions:
-  - designation: System and Network Administrator
-    start: Fev 2005
+      - Google Suite
+      - Google Cloud Platform
+      - Terraform
+      - Ansible
+      - Packer
+      - HAproxy
+      - Varnish
+      - GitHub
+      - NGinx
+      - Datadog
+      - Fortinet
+  - designation: System and network administrator
+    context:  Creation of the computer park from scratch at the start of the company then maintenance and evolution of the whole computer park (150 employees - 3 countries).
+    start: Feb 2005
     end: Oct 2017
     responsibilities:
-     - Technical support team manager
-     - Responsible for providers and SaaS solutions (calls for tenders, contract management ...)
-     - Installation, configuration and maintenance of all servers (physical and virtual)
-     - Industrialization of development environments for an international context
-     - Management, purchase, renewal, IS inventories
-     - Implementation of the system and network architecture (AD / samba4, LDAP, DNS, VPN, postfix, gitlab)
-     - Management of the domain name portfolio
-     - Implementation of monitoring solution (Nagios, Cacti)
-     - Implementation of backup and global antivirus solution (Symantec Endpoint & Backup Exec)
+      - Implementation of the system and network core architecture (AD/samba4, LDAP, DNS, VPN, postfix, gitlab, Symantec Endpoint & Backup Exec)
+      - Implementation of global monitoring solution (Nagios, Cacti)
+      - Responsible for service providers and SaaS solutions (tenders, contract management...)
+      - Installation, configuration and maintenance of servers (physical and virtual)
+      - Industrialization of environments for an international context
+      - Management, purchase, renewal, inventory of the IS
+      - Technical support team manager
+      - Management of the domain name portfolio
     technologies:
-     - VMware
-     - Linux OS (Debian, Ubuntu, RedHat)
-     - Windows OS
-     - Symantec Corporate
-     - Alcatel OmniPCX
-     - Dell MD storage
-     - Dell PowerConnect
-     - Nagios
-     - Cacti
-     - Cisco Switch
-     - Fortinet Firewall
-     - Gitlab
+      - VMware
+      - Linux OS (Debian, Ubuntu, RedHat)
+      - Windows OS
+      - Symantec Corporate
+      - Alcatel OmniPCX
+      - Dell MD storage
+      - Dell PowerConnect
+      - Nagios
+      - Cacti
+      - Cisco Switch
+      - Fortinet Firewall
+      - Gitlab
 
+## Acctys
 - company:
     name: ACCTYS
-    url: "https://urbact.eu/"
-    location: Paris
-    overview: Development of a PRESAGE-URBACT tool (LAMP) for the Interministerial Division of Cities (DIV).
-  positions:
-  - designation: Web Developer Fullstack
-    start: Dec 2003
-    end: Jan 2005
-    responsibilities:
-     - Development of a management tool for the URBACT program
-     - Creation of a dynamic site in PHP / HTML / CSS / JavaScript
-     - Analyzes and bug fixes
-     - Development of the database model
-     - Tests and recipes of the application
-     - Delivery and integration of evolutions on servers
-  technologies:
-     - Linux Debian
-     - Apache
-     - PHP
-     - JavaScript
-     - MySQL
-     - PDF générateur
-
-- company:
-    name: Synaptique Europe for 9TELECOM
     #url: "https://urbact.eu/"
     location: Paris
-    overview: Creation of the 9TELECOM ISP platform
+    overview: IT systems consulting company
+  positions:
+  - designation: Fullstack web developer
+    context: Development of a web tool for the PRESAGE-URBACT program
+    customer: Division Inter-Ministérielle des Villes (DIV)
+    url: https://urbact.eu/
+    start: Déc 2003
+    end: Jan 2005
+    responsibilities:
+      - Development of a management tool for the URBACT program
+      - Creation of a dynamic website in PHP/HTML/CSS/JavaScript
+      - Analysis and correction of bugs
+      - Development of the database relational model
+      - Tests and acceptance of the application
+      - Delivery and integration of the evolutions on the servers
+    technologies:
+      - Linux Debian
+      - Apache
+      - PHP
+      - JavaScript
+      - MySQL
+      - PDF générateur
+
+## Synaptique
+- company:
+    name: Synaptique Europe
+    location: Paris
+    overview: IT systems consulting company
+    # url:
   positions:
   - designation: Unix developer and integrator
+    customer: 9TELECOM
+    # url:
+    context: Creation of the online registration platform
     start: 2002
     end: 2003
     responsibilities:
-     - PHP / HTML / CSS / JavaScript development
-     - Writing of operating manuals
-     - Analysis and corrections of bugs
-     - Delivery and integrations on production servers
+      - PHP/HTML/CSS/JavaScript development
+      - Drafting of operating manuals
+      - Analysis and correction of bugs
+      - Deliveries and integrations on production servers
     technologies:
-     - SunOS 5.6
-     - Apache
-     - Oracle 8
-     - LDAP
-     - CVS
-
-- company:
-    name: Synaptique Europe for France Télécom
-    location: Paris
-    overview: Development of the GCN application installation kit (Numéris Order Management)
-  positions:
-  - designation: UNIX administrator and Oracle junior DBA
+      - SunOS 5.6
+      - Apache
+      - Oracle 8
+      - OpenLDAP
+      - CVS
+  - designation: UNIX Administrator and Oracle DBA junior
+    customer: France Télécom
+    url: https://www.orange.fr
     start: 2001
     end: 2002
+    context: Development of the installer kit for the GCN application (Gestion des Commandes Numéris)
     responsibilities:
-     - Implementation and configuration of Oracle servers and SGDBs
-     - Development of internal tool installation kits (K-shell)
+      - Set up and configuration of AIX and Oracle SGDB servers
+      - Development of installation kits for internal tools (K-shell)
     technologies:
-     - Unix (AIX 4.3)
-     - SunOS
-     - Oracle 8
-     - SQL
+      - AIX 4.3
+      - SunOS
+      - Oracle 8
+      - SQL
+      - PL/SQL

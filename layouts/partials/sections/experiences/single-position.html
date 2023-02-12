@@ -1,0 +1,40 @@
+<div class="col-10 col-lg-8">
+    <div class="experience-entry-heading">
+        {{ $position:= index .positions 0 }}
+        <!-- For single position, give emphasis on the designation-->
+        <h5>{{ $position.designation }}</h5>
+        <!-- Add experience duration info -->
+        <p class="text-muted fa-pull-right">{{ $position.start }} - {{ if $position.end }}{{ $position.end }}{{ else }}{{ i18n "present" }}{{ end }}, {{ .company.location }}</p>
+        <h6>{{ if .company.url }}<a href={{.company.url}} title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>{{ else }}{{ .company.name }}{{ end }}</h6>
+        <!-- Add company overview -->
+        <p class="font-italic">{{ .company.overview | markdownify }}</p>
+
+    </div>
+
+    <!-- Add designation customer -->
+    {{ if $position.customer }}
+    <h6>{{ i18n "mission_for" }} {{ if $position.url }}<a href={{$position.url}} title="{{ $position.customer }}" target="_blank" rel="noopener">{{ $position.customer }}</a>{{ else }}{{ $position.customer }}{{ end }}</h6>
+    {{ end }}
+
+    <!-- Add designation context -->
+    {{ if $position.context }}
+    <p class="text-info">{{ $position.context | markdownify }}</p>
+    {{ end }}
+
+    <!-- Add the responsibilities handled at this position -->
+    {{ if $position.responsibilities }}
+    <h6 class="text-muted">{{ i18n "responsibilities" }}:</h6>
+    <ul class="justify-content-around">
+    {{ range $position.responsibilities }}
+        <li>{{ . | markdownify }}</li>
+    {{ end }}
+    </ul>
+    {{ end }}
+    <!-- Add the technologie handled at this position -->
+    {{ if $position.technologies }}
+    <h6 class="text-muted">{{ i18n "technologies" }}:</h6>
+    <p>
+        {{ delimit $position.technologies ", " }}
+    </p>
+    {{ end }}
+</div>

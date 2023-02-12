@@ -1,0 +1,123 @@
+# More documentation here: https://github.com/nicksnyder/go-i18n
+[home]
+other = "Accueil"
+
+[posts]
+other = "Articles"
+
+[toc_heading]
+other = "Table des matières"
+
+[at]
+other = "chez"
+
+[resume]
+other = "Mon CV"
+
+[navigation]
+other = "Navigation"
+
+[contact_me]
+other = "Contact :"
+
+[email]
+other = "Email"
+
+[phone]
+other = "Téléphone"
+
+[newsletter_text]
+other = "Restez à jour par e-mail"
+
+[newsletter_input_placeholder]
+other = "Entrez une adresse e-mail"
+
+[newsletter_warning]
+other = "Nous ne partagerons jamais votre courriel avec quelqu'un d'autre."
+
+[submit]
+other = "Envoyer"
+
+[hugoAttributionText]
+other = "Alimenté par"
+
+[prev]
+other = "Précédent"
+
+[next]
+other = "Suivant"
+
+[improve_this_page]
+other = "Améliorez cette page"
+
+[out_of]
+other = "out of"
+
+[publications]
+other = "Publications"
+
+[taken_courses]
+other = "Taken Courses"
+
+[course_name]
+other = "Course Name"
+
+[total_credit]
+other = "Total Credit"
+
+[obtained_credit]
+other = "Obtained Credit"
+
+[extracurricular_activities]
+other = "Extracurricular Activities"
+
+[show_more]
+other = "Voir plus"
+
+[show_less]
+other = "Voir moins"
+
+[responsibilities]
+other = "Responsabilités"
+
+[present]
+other = "Present"
+
+[comments_javascript]
+other = "Veuillez activer JavaScript pour voir le"
+
+[comments_by]
+other = "Commentaires générés par"
+
+[read]
+other = "Lu"
+
+[project_star]
+other = "Star"
+
+[project_details]
+other = "Details"
+
+[err_404]
+other = "The page you are looking for is not there yet."
+
+[more]
+other = "Plus"
+
+[view_certificate]
+other = "Voir le certificat"
+
+[notes]
+other = "Notes"
+
+[disclaimer_text]
+other = "Liability Notice"
+
+[technologies]
+other = "Techonologies"
+
+[accomplishments]
+other = "Réalisations"
+
+[context]
+other = "Contexte"

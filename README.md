@@ -1,24 +1,30 @@
 # gohugo.io static Host
 
-## Clone repository
-```
-git clone https://github.com/freuds/hugoweb.git
-```
+## Install gohugo.io
+
+Follow instructions on this [page](https://gohugo.io/getting-started/installing/)
 
 ## Launch HUGO on development mode (default)
 ```
-hugo -D server
+make dev
 ```
 Test it on : http://localhost:1313
 
 
-## Build image
+## Build docker image
 ```
-docker build -f Dockerfile . -t <name>:<tag>
+make image
 ```
 
 ## Run locally
 ```
+make run
+docker run -d -p 80:8080 <name>:<tag>
+```
+
+## Debug docker image
+```
+make run
 docker run -d -p 80:8080 <name>:<tag>
 ```
 
