@@ -2,7 +2,7 @@ FROM nginx:alpine
 
 ARG NGINX_PORT="5000"
 ARG HUGO_ENV="production"
-ARG HUGO_VERSION="0.96.0"
+ARG HUGO_VERSION="0.110.0"
 ARG HUGO_FILENAME="hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
 ARG GITHUB_USER="freuds"
 ARG GITHUB_REPO="hugoweb"

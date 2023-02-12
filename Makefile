@@ -39,7 +39,7 @@ endif
 # hugo docker args
 #HUGO_BINARY = hugo_extended
 HUGO_BINARY = hugo
-HUGO_VERSION = 0.96.0
+HUGO_VERSION = 0.110.0
 HUGO_FILENAME = $(HUGO_BINARY)_$(HUGO_VERSION)_$(OS)-$(ARCH).tar.gz
 HUGO_ENV = production
 
@@ -74,7 +74,7 @@ dev: clear
 generate:
 		@hugo --environment $(HUGO_ENV)
 
-##  > docker : build docker image
+##  > image : build docker image
 image:
 		@docker build \
 			--build-arg HUGO_VERSION="$(HUGO_VERSION)" \

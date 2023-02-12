@@ -16,6 +16,23 @@ experiences:
     location: Paris
     overview: Formerly D2SI, a consulting firm specializing in the AWS Cloud, joined the Devoteam Group in 2020
   positions:
+  - designation: Lead DevOps and Automation
+    context: Within the CloudData team of Malakoff Humanis, we are in charge of managing, maintaining and evolving the Data infrastructure on AWS, the foundation is based on software such as Dataiku, JupyterHub and many other tools for the use of Data Scientist and Analalyst.
+    url: https://malakoffhumanis.com
+    start: Mai 2021
+    responsabilities:
+      - AWS & DevOps cloud referent for the infrastructure and Kubernetes part.
+      - Implementation, integration of new solutions in Kubernetes.
+      - Optimization, evolution and implementation of Terraform best practices.
+      - Implementation of IaC and local governance solutions.
+      - Industrialisation of Docker and Chart Helm build processes via ECR
+      - Ensuring the internal team's competence on Cloud AWS topics
+    technologies:
+      - AWS Core Services
+      - EKS
+      - JupyterHub
+      - Dataiku
+      - Jenkins
   - designation: AWS & DevOps Technical Architect
     context: Within the PFS network team of Bouygues Telecom, the DPPS department (Products and Services Platforms Department) is in charge of managing, maintaining and developing the different types of hosting platforms. This department is just starting their activity in the Cloud, so it is to support the implementation of Cloud solutions (mainly AWS).
     url: https://www.bouyguestelecom.fr

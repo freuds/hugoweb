@@ -17,7 +17,7 @@ skills:
 
 - name: Kubernetes
   logo: "/images/sections/skills/kubernetes.png"
-  summary: "Capable de déployer, gérer des applications sur Kubernetes."
+  summary: "Installation et administration de clusters K8S. Capable de déployer, gérer des applications sur Kubernetes."
   url: "https://kubernetes.io/"
 
 - name: Docker
