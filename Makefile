@@ -16,41 +16,6 @@ RESET        := $(shell tput -Txterm sgr0)
 .PHONY: help
 default: help
 
-# OS detection
-OS := Linux
-UNAME_S := $(shell uname -s)
-ifeq ($(UNAME_S),Linux)
-	OS = Linux
-endif
-ifeq ($(UNAME_S),Darwin)
-	OS = macOS
-endif
-
-# ARCH detection
-ARCH := 64bit
-UNAME_P := $(shell uname -m)
-ifeq ($(UNAME_P),x86_64)
-	ARCH = 64bit
-endif
-ifeq ($(UNAME_P),arm64)
-	ARCH = ARM64
-endif
-
-# hugo docker args
-#HUGO_BINARY = hugo_extended
-HUGO_BINARY = hugo
-HUGO_VERSION = 0.110.0
-HUGO_FILENAME = $(HUGO_BINARY)_$(HUGO_VERSION)_$(OS)-$(ARCH).tar.gz
-HUGO_ENV = production
-
-# NGINX args
-NGINX_PORT = 5000
-
-# hugoweb variables
-NAME = hugoweb
-VERSION = $(shell cat VERSION)
-CONTAINER_NAME = $(NAME)_$(VERSION)
-
 ##########################################################################
 ## This command manage hugoweb release
 ## Usage:
@@ -72,24 +37,11 @@ dev: clear
 
 ##  > generate : Generate public code with Hugo
 generate:
-		@hugo --environment $(HUGO_ENV)
+		@hugo --environment production
 
-##  > image : build docker image
-image:
-		@docker build \
-			--build-arg HUGO_VERSION="$(HUGO_VERSION)" \
-			--build-arg HUGO_FILENAME="$(HUGO_FILENAME)" \
-			--build-arg HUGO_ENV="$(HUGO_ENV)" \
-			--build-arg NGINX_PORT="$(NGINX_PORT)" \
-			--no-cache \
-			-f Dockerfile \
-			-t $(NAME):$(VERSION) .
-
-##  > run : launch Hugo from docker image
-run:
-		@docker run -d -p 1313:$(NGINX_PORT) --name $(CONTAINER_NAME) $(NAME):$(VERSION)
-
-##  > shell : shell exec on running container
-shell:
-		@container_id=$$(docker ps -q --filter="NAME=$(CONTAINER_NAME)") ; \
-		docker exec -ti $${container_id} sh
+##  > update & install module
+update:
+		@hugo mod tidy
+		@hugo mod npm pack
+		@npm install
+		@hugo server -w

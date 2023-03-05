@@ -30,6 +30,8 @@ experiences:
     technologies:
       - AWS Core Services
       - EKS
+      - Terraform
+      - Helm
       - JupyterHub
       - Dataiku
       - Jenkins

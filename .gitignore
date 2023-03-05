@@ -1,3 +1,4 @@
-public
-resources
+public/
+resources/
 *.lock
+node_modules/
