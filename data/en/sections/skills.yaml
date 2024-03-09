@@ -13,11 +13,11 @@ section:
 skills:
 - name: Cloud Computing
   logo: "/images/sections/skills/cloud.png"
-  summary: "Experienced with major cloud players like GCP, AWS, Azure"
+  summary: "Extensive experience with Amazon Web Services and Google Cloud Platform"
 
 - name: Kubernetes
   logo: "/images/sections/skills/kubernetes.png"
-  summary: "Manage installation & administration of K8S clusters. Capable of deploying, managing application on Kubernetes."
+  summary: "Manage installation & administration and upgrade of K8S clusters. Capable of deploying, managing application on Kubernetes."
   url: "https://kubernetes.io/"
 
 - name: Docker

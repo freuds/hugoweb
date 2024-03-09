@@ -1,5 +1,12 @@
 <div class="col-10 col-lg-8">
     <div class="experience-entry-heading">
+        {{ $logoImage:= resources.Get .company.logo}}
+        {{ if $logoImage }}
+        <div class="logo-holder">
+            <img class="company-logo" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+        </div>
+        {{ end }}
+
         {{ $position:= index .positions 0 }}
         <!-- For single position, give emphasis on the designation-->
         <h5>{{ $position.designation }}</h5>

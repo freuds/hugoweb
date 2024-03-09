@@ -13,7 +13,7 @@ section:
 skills:
 - name: Cloud Computing
   logo: "/images/sections/skills/cloud.png"
-  summary: "Expérience avec les principaux acteurs du Cloud commme GCP, AWS, Azure"
+  summary: "De nombreuses expériences avec Amazon Web Services et également sur Google Cloud Platform"
 
 - name: Kubernetes
   logo: "/images/sections/skills/kubernetes.png"
@@ -22,7 +22,8 @@ skills:
 
 - name: Docker
   logo: "/images/sections/skills/docker.png"
-  summary: "Expérience avec docker, registres, build (Linux/MacOS/Windows) etc."
+  summary: "Expériences avec docker, registres, build (Linux/MacOS/Windows) etc."
+  url: "https://hub.docker.io/"
 
 - name: Terraform
   logo: "/images/sections/skills/terraform.png"

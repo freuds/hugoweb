@@ -2,13 +2,12 @@ baseURL: http://localhost:1313
 
 languageCode: en-us
 title: "Fred's Blog"
-theme: "toha"
-defaultContentLanguage: fr
+# defaultContentLanguage: fr
 
 languages:
-  fr:
-    languageName: Français
-    weight: 1
   en:
     languageName: English
+    weight: 1
+  fr:
+    languageName: Français
     weight: 2

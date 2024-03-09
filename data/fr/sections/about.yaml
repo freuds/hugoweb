@@ -8,14 +8,14 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Cloud Consultant
+designation: Cloud Consultant Senior
 # your company information
 company:
   name: Devoteam Revolve
   url: "https://revolve.team"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+# resume: "files/resume.pdf"
 
 # a summary about you
 summary: 'Professionnel de l''informatique depuis plus de 20 ans et passionné depuis toujours par les nouvelles technologies, j''ai toujours aimer relevé des défis technologiques lié aux systèmes d''informations. J''apporte et mets en place des solutions techniques pour répondre aux besoins des processus métiers d''une société.'
@@ -60,5 +60,5 @@ badges:
 #   color: yellow
 # - type: soft-skill-indicator
 #   name: Curiosité
-#   percentage: 95
+#   percentage: 80
 #   color: green

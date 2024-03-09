@@ -39,9 +39,21 @@ dev: clear
 generate:
 		@hugo --environment production
 
+## > init : init hugo module theme
+init:
+		@hugo mod init github.com/hugo-toha/toha/v4
+		@hugo mod tidy
+
 ##  > update & install module
 update:
 		@hugo mod tidy
 		@hugo mod npm pack
 		@npm install
 		@hugo server -w
+
+## > check requirements
+check:
+		@go version
+		@hugo version
+		@node --version
+		@npm --version

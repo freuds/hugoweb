@@ -15,7 +15,7 @@ company:
   url: "https://revolve.team"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+# resume: "files/resume.pdf"
 
 # a summary about you
 summary: 'IT professional for over 20 years and always passionate about new technologies, I have always enjoyed taking on technological challenges related to information systems. I provide and implement technical solutions to meet the needs of a company''s business processes.'
