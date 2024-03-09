@@ -15,7 +15,7 @@
             {{ .company.location }}
         </p>
         <!-- For multiple positions, give emphasis on the company name-->
-        <h5>{{ if .company.url }}<a href={{.company.url}} title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>{{ else }}{{ .company.name }}{{ end }}</h5>
+        <h3>{{ if .company.url }}<a href={{.company.url}} title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>{{ else }}{{ .company.name }}{{ end }}</h3>
 
         <!-- Add company overview -->
         <p class="font-italic">{{ .company.overview | markdownify }}</p>
@@ -23,13 +23,15 @@
     <!-- Add the positions information -->
     <div class="positions">
     {{ range $index,$position:= .positions }}
-            <h6 class="designation"><span class="fa fa-caret-right"></span> {{ $position.designation }}
+        <h5 class="designation"><span class="fa fa-caret-right"></span> {{ $position.designation }}
+        </h5>
+        <p class="text-muted">
             <!-- Add designation customer -->
             {{ if $position.customer }}
-            ({{ if $position.url }}<a href={{$position.url}} title="{{ $position.customer }}" target="_blank" rel="noopener">{{ $position.customer }}</a>{{ else }}{{ $position.customer }}{{ end }})
+            {{ i18n "mission_for" }} {{ if $position.url }}<a href={{$position.url}} title="{{ $position.customer }}" target="_blank" rel="noopener">{{ $position.customer }}</a>{{ else }}{{ $position.customer }}{{ end }} :
             {{ end }}
-        </h6>
-        <p class="text-muted">{{ $position.start }} - {{if $position.end }} {{ $position.end }} {{else}} {{ i18n "present" }} {{end}}</p>
+            {{ $position.start }} - {{if $position.end }} {{ $position.end }} {{else}} {{ i18n "present" }} {{end}}
+        </p>
 
         <!-- Add designation context -->
         {{ if $position.context }}
@@ -38,7 +40,7 @@
 
         <!-- Add the responsibilities handled at this position -->
         {{ if $position.responsibilities }}
-        <h6 class="text-muted">{{ i18n "responsibilities" }}:</h6>
+        <h6 class="text-muted">{{ i18n "responsibilities" }}</h6>
         <ul class="justify-content-around">
         {{ range $position.responsibilities }}
             <li>{{ . | markdownify }}</li>
