@@ -17,10 +17,11 @@ experiences:
     overview: Formerly D2SI, a consulting firm specializing in the AWS Cloud, joined the Devoteam Group in 2020
   positions:
   - designation: Lead DevOps and Automation
+    customer: Malakoff Humanis
     context: Within the CloudData team of Malakoff Humanis, we are in charge of managing, maintaining and evolving the Data infrastructure on AWS, the foundation is based on software such as Dataiku, JupyterHub and many other tools for the use of Data Scientist and Analalyst.
     url: https://malakoffhumanis.com
-    start: Mai 2021
-    responsabilities:
+    start: Mai 2022
+    responsibilities:
       - AWS & DevOps cloud referent for the infrastructure and Kubernetes part.
       - Implementation, integration of new solutions in Kubernetes.
       - Optimization, evolution and implementation of Terraform best practices.
@@ -29,15 +30,19 @@ experiences:
       - Ensuring the internal team's competence on Cloud AWS topics
     technologies:
       - AWS Core Services
-      - EKS
+      - EKS/Helm
+      - Terraform
+      - Jenkins
       - JupyterHub
       - Dataiku
-      - Jenkins
-  - designation: AWS & DevOps Technical Architect
+      - Airflow
+
+  - designation: Technical Architect Cloud AWS
+    customer: Bouygues Telecom
     context: Within the PFS network team of Bouygues Telecom, the DPPS department (Products and Services Platforms Department) is in charge of managing, maintaining and developing the different types of hosting platforms. This department is just starting their activity in the Cloud, so it is to support the implementation of Cloud solutions (mainly AWS).
     url: https://www.bouyguestelecom.fr
     start: July 2021
-    # end: April 2022
+    end: April 2022
     responsibilities:
       - AWS & DevOps cloud referent for the Hosting department in liaison with the IT and CI/CD framework teams.
       - Act as a leader in the choice of technical architectures and solutions
@@ -168,7 +173,7 @@ experiences:
       - PHP
       - JavaScript
       - MySQL
-      - PDF générateur
+      - PDF generator
 
 ## Synaptique
 - company:

@@ -19,8 +19,8 @@ experiences:
   - designation: Lead DevOps et Automatisation
     context: Au sein de l'équipe CloudData de la société Malakoff Humanis, nous sommes en charge de gérer, maintenir et faire évoluer l'infrastructure Data sur AWS, le socle s'appuie sur des logiciels comme Dataiku, JupyterHub et de nombreux autres outils à l'usage des Data Scientist et Analalyst
     url: https://malakoffhumanis.com
-    start: Mai 2021
-    responsabilities:
+    start: Mai 2022
+    responsibilities:
       - Référent cloud AWS & DevOps pour la partie infrastructure et Kubernetes.
       - Mise en place, intégrations nouvelles solutions dans Kubernetes.
       - Optimisation, évolution et mise en place des "best" pratiques Terraform
@@ -29,13 +29,14 @@ experiences:
       - Assurer la montée en compétence l'équipe interne sur les sujets Cloud AWS
     technologies:
       - AWS Core Services
-      - EKS
+      - EKS/Helm
       - Terraform
-      - Helm
+      - Jenkins
       - JupyterHub
       - Dataiku
-      - Jenkins
-  - designation: Architecte Technique AWS & DevOps
+      - Airflow
+
+  - designation: Architecte Technique AWS
     context: Au sein de l'équipe PFS réseau de Bouygues Télécom, le service DPPS (Direction Produits et Plateformes de Services) est en charge de gérer, maintenir et faire évoluer les différentes types de plateforme d'hébergements. Ce service démarrant tout juste leur activité dans le Cloud, il s'agit donc d'accompagner à la mise en place des solutions Cloud (principalement AWS).
     url: https://www.bouyguestelecom.fr
     start: Juillet 2021
