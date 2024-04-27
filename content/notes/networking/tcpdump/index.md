@@ -3,9 +3,9 @@ title: TCPDump
 menu:
   notes:
     name: TCPDump
-    identifier: notes-tcpdump
-    parent: notes-networking
-    weight: 21
+    identifier: tcpdump-notes
+    parent: networking-notes
+    weight: 20
 ---
 <!-- A Sample Program -->
 {{< note title="Hello World">}}

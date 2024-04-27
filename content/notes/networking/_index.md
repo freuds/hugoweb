@@ -4,6 +4,6 @@ weight: 10
 menu:
   notes:
     name: Networking
-    identifier: notes-networking
+    identifier: networking-notes
     weight: 10
 ---
