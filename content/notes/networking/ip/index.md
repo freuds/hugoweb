@@ -3,8 +3,8 @@ title: Linux IP Command
 menu:
   notes:
     name: Linux IP Command
-    identifier: notes-linux-ip-command
-    parent: notes-networking
+    identifier: linux-ip-command-notes
+    parent: networking-notes
     weight: 20
 ---
 
@@ -15,20 +15,33 @@ ip [options] OBJECT COMMAND
 ip OBJECT help
 ```
 
-{{< /note >}}
 Understanding ip command OBJECTS syntax
 OBJECTS can be any one of the following and may be written in full or abbreviated form:
 
-| Object    | Abbreviated form | Purpose                                            |
-|-----------|------------------|----------------------------------------------------|
-| Link      |         l        | Network device                                     |
-| address   |     a<br>addr    | Protocol (IP or IPv6) address on a device          |
-| addrlabel |       addrl      | Label configuration for protocol address selection |
-| neighbour |    n<br>neigh    | ARP or NDISC cache entry.                          |
-| route     |         r        | Routing table entry.                               |
-| rule      |        ru        | Rule in routing policy database.                   |
-| maddress  |    m<br>maddr    | Multicast address.                                 |
-| mroute    |        mr        | Multicast routing cache entry.                     |
-| tunnel    |         t        | Tunnel over IP.                                    |
-| xfrm      |         x        | Framework for IPsec protocol.                      |
+(image)[/posts/introduction/hero.svg]
 
+```
+
+You can select between IPv4 and IPv6 using the following syntax:
+
+```shell
+### Only show TCP/IP IPv4  ##
+ip -4 a
+
+### Only show TCP/IP IPv6  ###
+ip -6 a
+```
+
+It is also possible to specify and list particular interface TCP/IP details:
+
+```shell
+### Only show eth0 interface ###
+ip a show eth0
+ip a list eth0
+ip a show dev eth0
+
+### Only show running interfaces ###
+ip link show up
+```
+
+{{< /note >}}
