@@ -5,13 +5,13 @@ menu:
   notes:
     name: Git
     identifier: git-notes
-    parent: system-notes
+    parent: others-notes
     weight: 20
 ---
 
 {{< note title="Init a git repository">}}
 
-```shell
+```bash
 # Git global setup
 git config --global user.name "myname"
 git config --global user.email "myemail@domain.local"
@@ -39,15 +39,19 @@ git remote add origin git@gitlab.domain.net:it/diskusagereports.git
 git push -u origin --all
 git push -u origin --tags
 ```
+
 {{< /note >}}
 
 {{< note title="Retrieve just one file from a remote repository">}}
-```shell
+
+```bash
 git archive --format=tar --remote=git_url HEAD -- <file> | tar xf -
 ```
+
 {{< /note >}}
 
 {{< note title="Git: make hotfix">}}
+
 ```bash
 # display branch info
 git branch -v
@@ -71,9 +75,11 @@ git submodule update --init --remote
 # init submodule with branch
 git submodule add -b branchname git@bitbucket.org:dir/repo.git path_to_submodule
 ```
+
 {{< /note >}}
 
 {{< note title="Annuler un commit après un push">}}
+
 ```bash
 # Annuler un commit, c'est finalement appliquer l'inverse de son diff !
 # On peut rediriger le diff des commits à annuler vers la commande patch --reverse :)
@@ -87,9 +93,11 @@ git revert HEAD~3..HEAD
 git revert 444b1cff
 # Il suffit alors de pousser proprement le commit obtenu sur le serveur.
 ```
+
 {{< /note >}}
 
 {{< note title="Branch manipulation">}}
+
 ```bash
 # To list all local branches
 git branch
@@ -131,10 +139,5 @@ git push <remote> --delete <branch>
 # To delete all merged remote branches:
 git branch -r --merged | egrep -v "(^\*|master|dev)" | sed 's/origin\///' | xargs -n 1 git push origin --delete
 ```
-{{< /note >}}
 
-{{< note title="Init a git repository">}}
-{{< /note >}}
-
-{{< note title="Init a git repository">}}
 {{< /note >}}

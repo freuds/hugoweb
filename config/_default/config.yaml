@@ -1,8 +1,7 @@
-baseURL: https://freuds.me
+baseURL: https://freuds.fr
 
 languageCode: en-us
-title: "Fred's Blog"
-# theme: "toha"
+title: "My Personal Blog"
 defaultContentLanguage: en
 
 # Use Hugo modules to add theme
@@ -102,11 +101,11 @@ params:
       enable: true
       # Share post on different social media
       shareButtons:
-        facebook: true
+        facebook: false
         twitter: true
         linkedin: true
         reddit: false
-        whatsapp: true
+        whatsapp: false
         email: true
 
     # Enable & configure "Notes" features

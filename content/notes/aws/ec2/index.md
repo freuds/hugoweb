@@ -11,7 +11,7 @@ menu:
 {{< note title="List of assigned IPs in subnet">}}
 EC2: List of assigned IPs in subnet
 
-```shell
+```bash
 aws ec2 describe-network-interfaces
     --filters "Name=subnet-id,Values=<subnet-id>"
     --query 'NetworkInterfaces[*].PrivateIpAddress'
@@ -20,7 +20,7 @@ aws ec2 describe-network-interfaces
 
 {{< note title="How to make EC2 user data script run again on startup?">}}
 How to make EC2 user data script run again on startup?
-```shell
+```bash
 rm /var/lib/cloud/instances/*/sem/config_scripts_user
 rm /var/lib/cloud/instance/sem/config_scripts_user
 ```

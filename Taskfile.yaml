@@ -1,0 +1,46 @@
+version: '3'
+
+tasks:
+  default:
+    silent: true
+    desc: Display all available tasks for this project
+    cmds:
+      - task --list-all
+
+  dev:
+    desc: Launch Hugo in development mode
+    cmds:
+      - clear
+      - hugo -D server
+
+  generate:
+    desc: Generate public code with Hugo
+    cmds:
+      - hugo --minify --printI18nWarnings --environment production
+
+  init:
+    desc: Initialize hugo module theme
+    cmds:
+      - hugo mod init github.com/hugo-toha/toha/v4
+      - hugo mod tidy
+
+  update:
+    desc: Update & install module
+    cmds:
+      - hugo mod tidy
+      - hugo mod npm pack
+      - npm install
+      - hugo server -w
+
+  check:
+    desc: Check requirements
+    cmds:
+      - go version
+      - hugo version
+      - node --version
+      - npm --version
+
+  clean:
+    desc: Clean the go module cache
+    cmds:
+      - go clean -modcache

@@ -1,49 +1,23 @@
 ---
-title: SQL useful commmands
+title: pgSQL commmands
 menu:
   notes:
-    name: SQL useful commmands
-    identifier: sql-useful-commands-notes
+    name: pgSQL
+    identifier: pgsql-notes
     parent: databases-notes
     weight: 20
 ---
 
-{{< note title="SQL useful commmands">}}
-SQL useful commmands (schema)
-
-```sql
-SELECT default_character_set_name FROM information_schema.SCHEMATA
-WHERE schema_name = "schemaname";
-```
-
-For tables:
-```sql
-SELECT CCSA.character_set_name FROM information_schema.`TABLES` T,
-       information_schema.`COLLATION_CHARACTER_SET_APPLICABILITY` CCSA
-WHERE CCSA.collation_name = T.table_collation
-  AND T.table_schema = "schemaname"
-  AND T.table_name = "tablename";
-```
-
-For Columns:
-```sql
-SELECT character_set_name FROM information_schema.`COLUMNS`
-WHERE table_schema = "schemaname"
-  AND table_name = "tablename"
-  AND column_name = "columnname";
-```
-{{< /note >}}
-
-
 {{< note title="pgSQL useful commmands">}}
 Connect PostgreSQL database
 
-```shell
+```bash
 psql -d database -U yser -W
 psql -U user -h host "dbname=db sslmode=require"
 ```
 
 Switch connection database
+
 ```text
 \c dbname username
 \l : list all databases
@@ -68,31 +42,44 @@ Switch connection database
 
 SELECT version();
 ```
-{{< /note >}}
 
-
-{{< note title="MySQLdump with nohup">}}
-Connect PostgreSQL database
-
-```shell
-sh -c 'nohup mysqldump -h mydb.hostname -u admin --triggers --routines --events --compress --all-databases --pXXXXX  > mydatabase.dmp &'
-```
 {{< /note >}}
 
 {{< note title="Create user pgSQL">}}
-See ROLES:
-```shell
+
+```bash
+# See ROLES
 psql -U postgres -c "SELECT * FROM pg_roles;"
 ```
 
-```shell
+```bash
 postgres=# create database mydb;
 postgres=# create user myuser with encrypted password 'mypass';
 postgres=# grant all privileges on database mydb to myuser;
 ```
+
 {{< /note >}}
 
-{{< note title="PostgesQL locks errors">}}
+{{< note title="Check Database Size in PostgreSQL">}}
+
+```bash
+postgres=# connect mydb;
+postgres=# SELECT pg_size_pretty(pg_database_size('mydb'));
+```
+
+{{< /note >}}
+
+{{< note title="Check Tables Size in PostgreSQL">}}
+
+```bash
+postgres=# connect mydb;
+mydb=# SELECT pg_size_pretty( pg_total_relation_size('mytbl'));
+```
+
+{{< /note >}}
+
+{{< note title="PostgeSQL locks errors">}}
+
 ```sql
 SELECT
     nom_base,
@@ -164,4 +151,26 @@ WHERE a.pid = b.pid
 WHERE rang = 1
 ORDER BY resultat.heure_debut_requete_bloquee,resultat.heure_debut_requete_bloquante ;
 ```
+
+{{< /note >}}
+
+{{< note title="Backup/Restore for PostgreSQL">}}
+
+```bash
+# Backup single database
+pg_dump my_database > my_database.sql
+# Restore single database
+psql my_database < my_database.sql
+
+# Backup All databases
+pg_dumpall > alldb.sql
+# Restore All databases
+psql < alldb.sql
+
+# Backup Compressed database
+pg_dump mydb | gzip > mydb.sql.gz
+# Restore compressed database
+gunzip -c mydb.sql.gz | psql mydb
+```
+
 {{< /note >}}

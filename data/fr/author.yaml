@@ -1,18 +1,18 @@
 # some information about you
-name: "Frédéric Willien"
+name: "Fred"
 nickname: ""
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: ""
 image: "images/author/fred-avatar.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "fred@freuds.me"
+  email: "fred@freuds.fr"
   github: freuds
   #phone: ""
 
 # some summary about what you do
 summary:
-  - DevOps Cloud
+  - DevOps & Automisation
   - SysAdmin Linux
   - Kubernetes & Containers
   - Supervision & Monitoring
