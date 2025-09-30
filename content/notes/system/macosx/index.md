@@ -10,7 +10,7 @@ menu:
 ---
 
 {{< note title="Flush DNS MacOSx">}}
-```shell
+```bash
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 ```
 
@@ -18,7 +18,7 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 
 {{< note title="Openlens block update">}}
 [Openlens github](https://github.com/MuhammedKalkan/OpenLens)
-```shell
+```bash
 sudo chmod -R 000 ~/Library/Application\ Support/Caches/open-lens-updater/pending
 ```
 

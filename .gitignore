@@ -4,3 +4,8 @@ resources/
 node_modules/*
 
 .vscode
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
