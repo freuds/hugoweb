@@ -26,5 +26,5 @@ fi
 if [ "${IS_PULL_REQUEST:-}" = "true" ]; then
     "$XDG_CACHE_HOME/hugo" --gc -e preview
 else
-    "$XDG_CACHE_HOME/hugo" --gc --minify --environment production
+    "$XDG_CACHE_HOME/hugo" --gc --minify --printI18nWarnings --environment production
 fi
